@@ -28,7 +28,7 @@
         return false;
       });
       // on the client side when we capture a chat message 
-      socket.on('chat message', function(msg){
+      socket.on('chat message show', function(msg){
         $('#messages').append($('<li>').text(msg));
       });
     </script>
