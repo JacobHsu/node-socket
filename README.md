@@ -1,12 +1,20 @@
-# node-socket
+node-socket
+---
+# Installation  
+`$ npm install`  
+`$ node server.js`  
+
+# Usage
+
+http://localhost:3000/  
 
 # NPM
 
-npm install --save express
-npm install --save socket.io
+[![NPM](https://nodei.co/npm/express.png?downloads=true&stars=true)](https://www.npmjs.com/package/express)  
+[![NPM](https://nodei.co/npm/socket.io.png?downloads=true&stars=true)](https://www.npmjs.com/package/socket.io)   
 
-# chat-example
+# References
 
-This is the source code for a very simple chat example used for 
-the [Getting Started](http://socket.io/get-started/chat/) guide 
-of the Socket.IO website.
+* [Getting Started](http://socket.io/get-started/chat/)
+* [Writing a Node.js App](https://community.c9.io/t/writing-a-node-js-app/1731)
+* [Cloud9](https://c9.io/)- Your development environment, in the cloud
