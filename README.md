@@ -2,7 +2,7 @@ node-socket
 ---
 # Installation  
 `$ npm install`  
-`$ node server.js`  
+`$ node index.js`  
 
 # Usage
 
@@ -24,6 +24,11 @@ jacobhsu:~/workspace (master) $ npm i
 ```
 c9users.io/ was loaded over HTTPS  
 > You should always use the HTTPS jQuery CDN reference
+
+`$ npm install`  
+`$ node index.js`   
+
+https://node-socket-jacobhsu.c9users.io/
 
 # References
 
