@@ -13,6 +13,18 @@ http://localhost:3000/
 [![NPM](https://nodei.co/npm/express.png?downloads=true&stars=true)](https://www.npmjs.com/package/express)  
 [![NPM](https://nodei.co/npm/socket.io.png?downloads=true&stars=true)](https://www.npmjs.com/package/socket.io)   
 
+# Cloud9
+
+> c9.io →  Repositories → Clone to edit  
+
+https://ide.c9.io
+```bash
+jacobhsu:~/workspace (master) $ npm i
+
+```
+c9users.io/ was loaded over HTTPS  
+> You should always use the HTTPS jQuery CDN reference
+
 # References
 
 * [Getting Started](http://socket.io/get-started/chat/)
