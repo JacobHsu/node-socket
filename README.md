@@ -30,6 +30,23 @@ c9users.io/ was loaded over HTTPS
 
 https://node-socket-jacobhsu.c9users.io/
 
+# Heroku
+
+.git config add
+```
+[remote "heroku"]
+    url = https://git.heroku.com/jacob-node-socket.git
+    fetch = +refs/heads/*:refs/remotes/heroku/*
+```
+Procfile  
+`web: node index.js`
+
+Deploy using Heroku Git  
+`$ heroku login`  
+`$ git push heroku master`  
+
+http://jacob-node-socket.herokuapp.com/
+
 # References
 
 * [Getting Started](http://socket.io/get-started/chat/)
