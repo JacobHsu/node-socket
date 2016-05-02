@@ -5,20 +5,20 @@ var io = require('socket.io')(http);
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(req, res){
-  //res.send('<h1>Hello world</h1>');
-  res.sendFile(__dirname + '/public/index.html');
-});
+// app.get('/', function(req, res){
+//   res.send('<h1>Hello world</h1>');
+//   res.sendFile(__dirname + '/public/index.html');
+// });
 
 io.on('connection', function(socket){
-  console.log('a user connected');
+  console.log('a user connected',socket.id);
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
   socket.on('chat message', function(msg){
     console.log('message: ' + msg);
     // send and receive any events you want
-    io.emit('chat message show', msg);
+    io.emit('chat message show', socket.id, msg);
   });
 });
 

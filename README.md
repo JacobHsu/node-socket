@@ -53,3 +53,5 @@ http://jacob-node-socket.herokuapp.com/
 * [Writing a Node.js App](https://community.c9.io/t/writing-a-node-js-app/1731)
 * [Cloud9](https://c9.io/)- Your development environment, in the cloud
 * [Heroku](https://www.heroku.com/) : Cloud Application Platform
+* [bootstrap_modal](http://www.w3schools.com/bootstrap/bootstrap_modal.asp)
+* [getbootstrap css](http://getbootstrap.com/css/)
