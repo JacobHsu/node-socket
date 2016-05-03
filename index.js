@@ -20,6 +20,14 @@ io.on('connection', function(socket){
     // send and receive any events you want
     io.emit('chat message show', socket.id, msg);
   });
+
+  socket.on('change', function(data){
+    var str = "0123456789abcdef", hex = "";
+    for (j = 0; j < 6; j++) {
+        hex = hex + str.charAt(Math.random() * str.length);
+    }
+    io.emit('index_get_response', socket.id, {color:hex});
+  });
 });
 
 var port = process.env.PORT || 3000;

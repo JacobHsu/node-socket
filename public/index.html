@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
   <head>
     <title>Socket.IO chat</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -13,6 +13,9 @@
   <body>
 
     <ul id="messages"></ul>
+    <div class="pull-right">
+      <button class="btn btn-muted glyphicon glyphicon-refresh" id="change_btn"></button>
+    </div>
 
     <form role="form">
       <div class="input-group" >
@@ -52,7 +55,6 @@
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
-
       var socket = io();
       $('form').submit(function(){
         socket.emit('chat message', $('#btn-input').val());
@@ -80,6 +82,18 @@
 
       var qrcode_img = "<img src='http://chart.apis.google.com/chart?chs=250x250&cht=qr&chl=http://10.5.89.59:3000&choe=UTF-8' />";
       $("#qrcode").append(qrcode_img);
+
+      $("#change_btn").click(function(){
+          socket.emit("change", {
+              acttion: "changebg"
+          });
+      });
+
+      socket.on('index_get_response', function(id, data){
+        setTimeout(function () {
+           $("body").css("background-color", '#'+data.color);
+        }, 500);
+      });
     </script>
   </body>
 </html>

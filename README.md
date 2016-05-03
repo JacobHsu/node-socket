@@ -47,6 +47,17 @@ Deploy using Heroku Git
 
 http://jacob-node-socket.herokuapp.com/
 
+# Note
+```
+request(change_btn)  index.js(node)                index.html
+   |
+   +--------------->  'change'      +------------>'index_get_response'
+                         |          |                 |
+                       next         |                next
+                         |          |                 |
+                         v          |                 v
+               'index_get_response'-+          $("body").css("background-color", '#XXXXXX');
+```
 # References
 
 * [Getting Started](http://socket.io/get-started/chat/)
@@ -55,3 +66,4 @@ http://jacob-node-socket.herokuapp.com/
 * [Heroku](https://www.heroku.com/) : Cloud Application Platform
 * [bootstrap_modal](http://www.w3schools.com/bootstrap/bootstrap_modal.asp)
 * [getbootstrap css](http://getbootstrap.com/css/)
+* [Components · Bootstrap](http://getbootstrap.com/components/)
