@@ -21,7 +21,7 @@ app.get('/deploy', function(req, res){
   var resp = "";
 
   child.stdout.on('data', function(buffer) { resp += buffer.toString(); });
-  child.stdout.on('end', function() { callback (resp) });
+  child.stdout.on('end', function() { console.log(resp); });
 });
 
 io.on('connection', function(socket){
