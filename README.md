@@ -12,6 +12,9 @@ http://localhost:3000/
 
 [![NPM](https://nodei.co/npm/express.png?downloads=true&stars=true)](https://www.npmjs.com/package/express)  
 [![NPM](https://nodei.co/npm/socket.io.png?downloads=true&stars=true)](https://www.npmjs.com/package/socket.io)   
+[![NPM](https://nodei.co/npm/forever.png?downloads=true&stars=true)](https://www.npmjs.com/package/forever)
+[![NPM](https://nodei.co/npm/github-webhook-handler.png?downloads=true&downloadRank=true)](https://nodei.co/npm/github-webhook-handler/)
+[![NPM](https://nodei.co/npm-dl/github-webhook-handler.png?months=6&height=3)](https://nodei.co/npm/github-webhook-handler/)
 
 # Cloud9
 
