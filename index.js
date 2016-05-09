@@ -10,6 +10,20 @@ app.use(express.static(__dirname + '/public'));
 //   res.sendFile(__dirname + '/public/index.html');
 // });
 
+app.get('/deploy', function(req, res){
+  res.send('<h1>deploy..</h1>');
+
+  var cmd = 'bash';
+  var args = ['./deploy.sh'];
+
+  var spawn = require('child_process').spawn;
+  var child = spawn(cmd, args);
+  var resp = "";
+
+  child.stdout.on('data', function(buffer) { resp += buffer.toString(); });
+  child.stdout.on('end', function() { callback (resp) });
+});
+
 io.on('connection', function(socket){
   console.log('a user connected',socket.id);
   socket.on('disconnect', function(){
