@@ -47,6 +47,11 @@ Deploy using Heroku Git
 
 http://jacob-node-socket.herokuapp.com/
 
+# QA
+
+[How to run .sh file on Windows 7 through Cygwin?](http://stackoverflow.com/questions/22722604/how-to-run-sh-file-on-windows-7-through-cygwin)
+`bash run.sh`  
+
 # References
 
 * [Getting Started](http://socket.io/get-started/chat/)
